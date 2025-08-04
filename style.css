@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+#connectWallet {
+  padding: 0.5rem 1rem;
+  background: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input, textarea {
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button[type="submit"] {
+  background: #00c6ff;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  border: none;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#status {
+  margin-top: 1rem;
+  font-size: 1rem;
+  background: #2ecc71;
+  padding: 1rem;
+  border-radius: 12px;
+  display: none;
+}
