@@ -1,1 +1,1 @@
-# Memelex
+# Memelex - Solana Token Creator
