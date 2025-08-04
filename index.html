@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MemeLex Token Creator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>MemeLex Token Creator</h1>
+      <button id="connectWallet">Connect Wallet</button>
+    </header>
+
+    <form id="tokenForm">
+      <input type="text" id="name" placeholder="Token Name" required />
+      <input type="text" id="symbol" placeholder="Token Symbol" required />
+      <input type="number" id="decimals" placeholder="Decimals (9)" value="9" required />
+      <input type="number" id="supply" placeholder="Total Supply" required />
+      <textarea id="description" placeholder="Description (Optional)"></textarea>
+      
+      <label><input type="checkbox" id="revokeFreeze" checked /> Revoke Freeze Authority</label>
+      <label><input type="checkbox" id="revokeMint" /> Revoke Mint Authority</label>
+
+      <button type="submit" id="createTokenBtn" disabled>Create Token (0.2 SOL)</button>
+    </form>
+
+    <div id="status"></div>
+  </div>
+</body>
+</html>
